@@ -38,35 +38,101 @@
 
 // Код возьмите из предыдущего домашнего задания
 
-const nunberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+// const nunberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
-const personalMovieDB = {
-  count: nunberOfFilms,
-  movies: {
-    logan: "8.1",
-  },
-  actors: {},
-  genres: [],
-  privat: false,
-};
+// const personalMovieDB = {
+//   count: nunberOfFilms,
+//   movies: {
+//     logan: "8.1",
+//   },
+//   actors: {},
+//   genres: [],
+//   privat: false,
+// };
 
-for (let i = 0; i < 2; i++) {
+// for (let i = 0; i < 2; i++) {
+//   const oneLastMovie = prompt("Один из последних просмотренных фильмов?", ""),
+//     grade = prompt("На сколько оцените его?", "");
+
+//   if (oneLastMovie != "" && grade != "" && oneLastMovie != null && grade != null && oneLastMovie.length > 50) {
+//     personalMovieDB.movies[oneLastMovie] = grade;
+//     console.log("done");
+//   } else {
+//     console.log("error");
+//     i--;
+//   }
+// }
+
+// if (personalMovieDB.count<10) {
+//   console.log("Просмотрено довольно мало фильмов");
+// } else if (personalMovieDB.count>=10 && personalMovieDB.count<30) {
+//   console.log("Вы классический зритель");
+// } else if (personalMovieDB.count>30) {
+//   console.log("Вы киноман")
+// } else {
+//   console.log("произошла ошибка")
+// }
+
+// console.log(personalMovieDB);
+
+// const nunberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+
+// const personalMovieDB = {
+//   count: nunberOfFilms,
+//   movies: {
+//     logan: "8.1",
+//   },
+//   actors: {},
+//   genres: [],
+//   privat: false,
+// };
+
+// for (let i = 0; i < 2; i++) {
+//   const oneLastMovie = prompt("Один из последних просмотренных фильмов?", ""),
+//     grade = prompt("На сколько оцените его?", "");
+
+//   if (
+//     oneLastMovie != null &&
+//     grade != null &&
+//     oneLastMovie != "" &&
+//     grade != "" &&
+//     oneLastMovie.length > 50
+//   ) {
+//     personalMovieDB.movies[oneLastMovie] = grade;
+//     console.log("done");
+//   } else {
+//     console.log("error");
+//   }
+// }
+
+// if (personalMovieDB.count < 10) {
+//   console.log("Просмотрено довольно мало фильмов");
+// } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//   console.log("Вы классический зритель");
+// } else if (personalMovieDB.count > 30) {
+//   console.log("Вы киноман");
+// } else {
+//   console.log("произошла ошибка");
+// }
+
+// console.log(personalMovieDB);
+
+let num = 2;
+
+while ((num = 2)) {
   const oneLastMovie = prompt("Один из последних просмотренных фильмов?", ""),
     grade = prompt("На сколько оцените его?", "");
-
   if (
-    oneLastMovie != "" &&
-    grade != "" &&
     oneLastMovie != null &&
     grade != null &&
+    oneLastMovie != "" &&
+    grade != "" &&
     oneLastMovie.length > 50
   ) {
     personalMovieDB.movies[oneLastMovie] = grade;
     console.log("done");
   } else {
     console.log("error");
-    i--;
   }
+  num++;
 }
-
-console.log(personalMovieDB);

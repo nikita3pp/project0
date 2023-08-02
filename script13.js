@@ -34,27 +34,27 @@ const personalMovieDB = {
 
 function rememberMyFilms() {
   for (let i = 0; i < 2; i++) {
-    const oneLastMovie = prompt("Один из последних просмотренных фильмов?", ""),
-      grade = prompt("На сколько оцените его?", "");
+    const oneLastMovie = prompt(
+      "Один из последних просмотренных фильмов?",
+      ""
+    ).trim();
+    const grade = prompt("На сколько оцените его?", "");
 
     if (
       oneLastMovie != "" &&
       grade != "" &&
       oneLastMovie != null &&
       grade != null &&
-      oneLastMovie.length > 50
+      oneLastMovie.length < 50
     ) {
       personalMovieDB.movies[oneLastMovie] = grade;
       console.log("done");
     } else {
       console.log("error");
-      i--;
-      //   ?
     }
   }
 }
-
-// rememberMyFilms();
+rememberMyFilms();
 
 function detectPersonalLevel() {
   if (personalMovieDB.count < 10) {
@@ -67,7 +67,7 @@ function detectPersonalLevel() {
     console.log("произошла ошибка");
   }
 }
-// detectPersonalLevel();
+detectPersonalLevel();
 
 // console.log(personalMovieDB);
 
@@ -78,7 +78,7 @@ function detectPersonalLevel() {
 // }
 
 function showMyDB(hidden) {
-  if (!hidden) {
+  if (hidden) {
     console.log(personalMovieDB);
   }
 }

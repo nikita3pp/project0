@@ -27,7 +27,7 @@ options.makeTest();
 const { border, bg } = options.colors;
 console.log(border);
 
-console.log(Object.keys(options).length);
+console.log(Object.keys(options));
 
 // console.log(options.colors.bg);
 

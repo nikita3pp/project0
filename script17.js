@@ -93,4 +93,4 @@ const q = {
 
 const newObj = { ...q };
 
-console.lof(newObj);
+console.log(newObj);

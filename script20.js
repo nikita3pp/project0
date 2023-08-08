@@ -1,4 +1,4 @@
-const family = [];
+const family = ["nik", "lin"];
 
 function showFamily(family) {
   let composition = "";

@@ -25,6 +25,8 @@ promotion(res);
 // 2 вариант (хуже)
 // promotion(convert(500, usdCurr));
 
+// *****
+
 function test() {
   for (let i = 0; i <= 5; i++) {
     console.log(i);
@@ -34,6 +36,8 @@ function test() {
 }
 
 test();
+
+// *****
 
 function doNothing() {}
 console.log(doNothing() === undefined);

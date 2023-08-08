@@ -8,9 +8,7 @@ console.log(arr.length);
 console.log(str.toUpperCase());
 console.log(str.toLowerCase());
 
-const fruit = "some fruit";
 console.log(fruit.indexOf("fruit"));
 
 const logg = "Hello world";
-
 console.log(logg.slice(5, 11));

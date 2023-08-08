@@ -6,19 +6,19 @@ function standardizeStrings(favoriteCities) {
   let str = "";
 
   favoriteCities.forEach((city) => {
-    str += `${favoriteCities.city}. \n`;
+    str += `${city} \n`;
   });
 
   return str.toLowerCase();
 }
 
-console.log(standardizeStrings(favoriteCities));
-
-// function standardizeStrings(favoriteCities) {
-//   let str = "";
-//   str = favoriteCities.join(" \n").toLowerCase();
-
-//   return str;
-// }
-
 // console.log(standardizeStrings(favoriteCities));
+
+function standardizeStrings(favoriteCities) {
+  let str = "";
+  str = favoriteCities.join(" \n").toLowerCase();
+
+  return str;
+}
+
+console.log(standardizeStrings(favoriteCities));
